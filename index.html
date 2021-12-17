@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<article>
+    <h1>Tabla de Usuarios</h1>
+    <button class="abrir-modal-nuevo-usuario">Nuevo Usuario</button>
+    <div class="formulario-nuevo-usuario" id="contenedor-formulario">
+        <form id="formulario-nuevo-usuario">
+            <div class="cerrar-formulario-nuevo-usuario"><p>X</p></div>
+            <label> Nombre <input type="text" id="input-nombre"> </label>
+            <label> Email <input type="text" id="input-email"></label>
+            <label> Telefono <input type="text" id="input-numero"></label>
+            <label> Direccion <input type="text" id="input-direccion"></label>
+            <input type="submit" value="Nuevo Usuario" id="boton-enviar-usuario">
+        </form>
+    </div>
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Acciones</th>
+        </tr>
+        <tr>
+            <td>Gabi</td>
+            <td>gabita@gmail.com</td>
+            <td>Calle Falsa 123</td>
+            <td>4567899</td>
+            <td>Editar / Borrar</td>
+        </tr>
+    </table>
+
+
+</article>
+
+
+
+    <!-- HTML - TABLAS 
+    -Siempre empieza con la etiqueta tabla
+    -Etiquetas
+       -tr: table row (filas)
+       -th: table head (primera fila, es el encabezado)
+       -td: table data (datos de la tabla)
+
+    -Se da padding a los th y td
+    -Se le puede poner border spacing a la tabla para separar los elementos
+    -Tengo propiedades para decirle a los td/th cuando ocupan
+    -Colspan y rowspan:
+
+    <th colspan="2"> Nombre </th>
+    <th rowspan="2"> Nombre </th>
+
+    Si le quiero poner un border al tr
+    Le tengo que poner a la talba, border collapse 
+    -->
+
+
+    <script src="index.js"></script>
+</body>
+</html>
